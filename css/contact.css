@@ -1,0 +1,113 @@
+.contact .pageContent {
+  padding-bottom: 0 !important;
+}
+.contact .pageContent .container {
+  margin-bottom: 5%;
+}
+.contact .content {
+  display: flex;
+}
+@media screen and (max-width: 991px) {
+  .contact .content {
+    flex-direction: column;
+  }
+}
+.contact .infoBox {
+  width: 35%;
+  padding-right: 50px;
+}
+@media screen and (max-width: 991px) {
+  .contact .infoBox {
+    padding: 0;
+    width: 100%;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .contact .infoBox {
+    padding: 0 20px;
+  }
+}
+.contact .formBox {
+  width: 65%;
+}
+@media screen and (max-width: 991px) {
+  .contact .formBox {
+    width: 100%;
+    padding-top: 40px;
+    border-top: #ccc 1px solid;
+  }
+}
+.contact .title {
+  font-weight: bold;
+  font-size: 1.75rem;
+  margin-bottom: 10%;
+}
+@media screen and (max-width: 991px) {
+  .contact .title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .contact .title {
+    font-size: 1.25rem;
+  }
+}
+.contact .infoBox ul {
+  max-width: 380px;
+}
+.contact .infoBox ul li {
+  display: flex;
+  font-size: 1.125rem;
+}
+.contact .infoBox ul li + li {
+  margin-top: 30px;
+}
+@media screen and (max-width: 991px) {
+  .contact .infoBox ul li + li {
+    margin-top: 20px;
+  }
+}
+.contact .infoBox ul li .label {
+  color: #01A0E9;
+  font-weight: bold;
+  width: 75px;
+  flex-shrink: 0;
+}
+.contact .formBox .info {
+  color: #111111;
+  font-size: 1.3125rem;
+  margin-bottom: 5%;
+  font-weight: 500;
+}
+@media screen and (max-width: 991px) {
+  .contact .formBox .info {
+    font-size: 1.125rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .contact .formBox .info {
+    font-size: 1rem;
+  }
+}
+.contact .mapBox {
+  position: relative;
+  line-height: 0;
+}
+.contact .mapBox::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  background: linear-gradient(to bottom, rgb(255, 255, 255) 0%, rgba(255, 255, 255, 0) 100%);
+  display: block;
+  z-index: 9;
+  pointer-events: none;
+}
+.contact .mapBox iframe {
+  height: 680px;
+  width: 100%;
+}/*# sourceMappingURL=contact.css.map */

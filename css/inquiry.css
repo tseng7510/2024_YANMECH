@@ -1,0 +1,324 @@
+.mainBox {
+  padding-top: 0;
+}
+
+.inquiry {
+  position: relative;
+}
+.inquiry .topBox {
+  background: #1d1e1e url("../images/in/banner_inquiry.jpg") center right no-repeat;
+  position: relative;
+  z-index: 2;
+  isolation: isolate;
+}
+@media screen and (max-width: 767px) {
+  .inquiry .topBox {
+    padding: 30px 0 70px;
+  }
+}
+.inquiry .topBox::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  display: block;
+  z-index: -1;
+  background: linear-gradient(to right, rgb(29, 30, 30) 50%, rgba(34, 36, 36, 0) 80%);
+}
+.inquiry .topBox .title {
+  font-size: 3.625rem;
+  color: #fff;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 991px) {
+  .inquiry .topBox .title {
+    font-size: 3rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .inquiry .topBox .title {
+    font-size: 1.875rem;
+  }
+}
+.inquiry .topBox .info .subTitle {
+  font-size: 1.75rem;
+  color: #13315F;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 991px) {
+  .inquiry .topBox .info .subTitle {
+    font-size: 1.375rem;
+  }
+}
+@media screen and (max-width: 767px) {
+  .inquiry .topBox .info .subTitle {
+    font-size: 1.125rem;
+  }
+}
+.inquiry .topBox .info .description {
+  font-size: 1.125rem;
+  color: #cccccc;
+  max-width: 880px;
+}
+@media screen and (max-width: 991px) {
+  .inquiry .topBox .info .description {
+    font-size: 1rem;
+  }
+}
+.inquiry .bottomBox {
+  position: relative;
+  z-index: 2;
+}
+.inquiry .bottomBox .container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.inquiry .bottomBox .formBox {
+  z-index: 2;
+  background: #fff;
+  width: 45%;
+  padding: 4% 5%;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+}
+@media screen and (max-width: 767px) {
+  .inquiry .bottomBox .formBox {
+    width: 100%;
+  }
+}
+.inquiry .inquiryList .title {
+  padding: 3% 0;
+  font-weight: 700;
+  font-size: 1.75rem;
+  text-align: center;
+  color: #fff;
+  background: #13315F;
+}
+.inquiry table {
+  width: 100%;
+}
+.inquiry table img {
+  max-width: 85px;
+  aspect-ratio: 1;
+}
+.inquiry table tr:nth-child(even) {
+  background: #E9E9E9;
+}
+.inquiry table thead {
+  border-top: #dddddd 1px solid;
+  border-bottom: #dddddd 1px solid;
+}
+.inquiry table thead tr {
+  color: #13315F;
+}
+.inquiry table thead tr td {
+  color: #000;
+  font-size: 1.125rem;
+  padding: 15px 15px;
+  border: none;
+  font-weight: normal;
+}
+.inquiry table thead tr td:nth-last-child(1), .inquiry table thead tr td:nth-last-child(2) {
+  text-align: center;
+}
+@media screen and (max-width: 991px) {
+  .inquiry table thead {
+    display: none;
+  }
+}
+@media screen and (max-width: 991px) {
+  .inquiry table tbody tr {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    border-top: #dddddd 1px solid;
+  }
+}
+.inquiry table tbody tr + tr {
+  border-bottom: #dddddd 1px solid;
+}
+@media screen and (max-width: 991px) {
+  .inquiry table tbody tr + tr {
+    margin: 20px 0 0;
+  }
+}
+.inquiry table tbody td {
+  padding: 15px;
+}
+.inquiry table tbody td:nth-child(1) {
+  border-right: none;
+  width: 115px;
+  line-height: 0;
+  padding: 10px 15px;
+}
+.inquiry table tbody td:nth-child(2) {
+  font-weight: 500;
+  font-size: 1.3125rem;
+  border-left: none;
+  width: calc(100% - 115px - 161px - 76px);
+}
+@media screen and (max-width: 991px) {
+  .inquiry table tbody td:nth-child(2) {
+    border: none;
+    display: flex;
+    align-items: center;
+    border: none !important;
+    width: calc(100% - 115px);
+  }
+}
+.inquiry table tbody td:nth-child(3) {
+  width: 160px;
+}
+@media screen and (max-width: 991px) {
+  .inquiry table tbody td:nth-child(3) {
+    border: none;
+    width: 100%;
+  }
+}
+.inquiry table tbody td:nth-child(4) {
+  width: 60px;
+}
+@media screen and (max-width: 991px) {
+  .inquiry table tbody td:nth-child(4) {
+    width: 100%;
+    padding: 0;
+  }
+}
+.inquiry table tbody td:nth-child(4) button {
+  margin: 0 auto;
+}
+@media screen and (max-width: 991px) {
+  .inquiry table tbody td {
+    border: none !important;
+    margin-top: -1px;
+    width: 100%;
+    display: block;
+  }
+  .inquiry table tbody td + td {
+    border-top: #dddddd 1px solid !important;
+  }
+}
+.inquiry .qtyBox {
+  width: 130px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  justify-content: center;
+}
+.inquiry .qtyBox input {
+  width: 50px;
+  height: 45px;
+  font-size: 18px;
+  color: #202020;
+  text-align: center;
+  background: #DBDBDB;
+  border: #e9e9e9 1px solid;
+  border-width: 1px 0;
+}
+.inquiry .qtyBox button {
+  width: 30px;
+  height: 45px;
+  color: #E70016;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  background: #fff;
+  border: #e7e7eb 1px solid;
+  transition: all 0.3s ease;
+}
+.inquiry .qtyBox button::before {
+  content: "";
+  width: 10px;
+  height: 2px;
+  display: block;
+  background: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease;
+}
+.inquiry .qtyBox button.add::after {
+  content: "";
+  width: 2px;
+  height: 10px;
+  display: block;
+  background: #000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease;
+}
+.inquiry .qtyBox button:hover {
+  background: #E70016;
+}
+.inquiry .qtyBox button:hover::before, .inquiry .qtyBox button:hover:after {
+  background: #fff;
+}
+.inquiry .del {
+  width: 30px;
+  height: 30px;
+  display: block;
+  position: relative;
+  line-height: 1;
+  text-align: center;
+  padding: 0;
+  background: none;
+  transition: all 0.3s ease;
+}
+@media screen and (max-width: 991px) {
+  .inquiry .del {
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    background: #000;
+  }
+}
+.inquiry .del:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  top: 0;
+  bottom: 0%;
+  right: 0;
+  z-index: 0;
+  background: #1b1918;
+  transition: all 0.3s ease;
+}
+.inquiry .del:after {
+  content: "\e80b";
+  line-height: 0;
+  font-size: 14px;
+  height: 15px;
+  color: #E70016;
+  line-height: 1;
+  position: absolute;
+  top: 8px;
+  left: 9px;
+  transition: all 0.3s ease;
+}
+@media screen and (max-width: 991px) {
+  .inquiry .del:after {
+    content: "Delete";
+    color: #fff;
+    position: relative;
+    top: auto;
+    left: auto;
+  }
+}
+.inquiry .del:hover:after {
+  color: #13315F;
+}
+@media screen and (max-width: 991px) {
+  .inquiry .del:hover {
+    background: #13315F;
+  }
+  .inquiry .del:hover:after {
+    color: #fff;
+  }
+}
+.inquiry .infoBox {
+  margin-top: 10%;
+}/*# sourceMappingURL=inquiry.css.map */
